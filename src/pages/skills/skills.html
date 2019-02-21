@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Skills</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="bg">
+    <div class="section main">
+      <div class="container">
+
+        <div *ngFor="let row of skills" class="columns">
+          <ng-container *ngFor="let item of row">
+            <ion-card>
+              <ion-card-header>
+                <img src="{{item.img}}" alt="Image" class="img-size-max">
+              </ion-card-header>
+              <ion-card-content>
+                <p class="has-text-centered">{{item.name}}</p>
+              </ion-card-content>
+            </ion-card>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

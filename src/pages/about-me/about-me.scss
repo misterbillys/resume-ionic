@@ -1,0 +1,32 @@
+page-about-me {
+
+    .profile-pic {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .container {
+        text-align: center;
+        color: #4a4a4a;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-left: 10%;
+        flex: none;
+        width: 80%;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .my-icon {
+        margin-top: 30px;
+        color: grey;
+        border-radius: 0%;
+    }
+    text {
+        color: white;
+    }
+
+}

@@ -14,3 +14,77 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@import "../assets/scss/fontawesome.scss";
+@import "../assets/scss/solid.scss";
+@import "../assets/scss/brands.scss";
+
+.bg {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
+  min-height: 100vh;
+  max-height: auto;
+  margin: 0px 0px;
+  background-color: white;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;
+    min-height: 100vh;
+    max-height: auto;
+    margin: 0px 0px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.fab {
+    overflow: visible !important;
+    font-size: 48px;
+}
+
+.facebook {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-facebook-square); 
+    }
+}
+
+.instagram {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-instagram); 
+    }
+}
+
+.github {
+    @extend %fa-icon;
+    @extend .fab;
+  
+    &:before {
+      content: fa-content($fa-var-github); 
+    }
+}
+
+.linkedin {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-linkedin); 
+  }
+}

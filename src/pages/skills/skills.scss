@@ -1,0 +1,25 @@
+page-skills {
+    .card-md {
+        width: 33%;
+    }
+    .columns {
+        display: flex;
+    }
+    .card-content {
+        text-align: center;
+    }
+    @media only screen and (max-width: 768px) {
+        .card-md {
+            width: 100%;
+            margin-left: 0px;
+        }
+        .columns {
+            display: block;
+        }
+    }
+    .img-size-max {
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0% auto 0% auto;
+    }
+}
