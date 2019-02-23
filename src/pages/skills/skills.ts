@@ -82,27 +82,6 @@ export class SkillsPage {
 
     ],
   ];
-
-  ngOnInit() {
-    // console.log(this.skills);
-  }
-
-  ngOnChanges() {
-    //  this.visibility = this.isVisible ? 'shown' : 'hidden';
-  }
-
-  fadeClick() {
-    this.isVisible = !this.isVisible;
-    this.visibility = this.isVisible ? 'shown' : 'hidden';
-    this.check = !this.check;
-  }
-
-  onMouse() {
-    this.isVisible = !this.isVisible;
-    this.visibility = this.isVisible ? 'shown' : 'hidden';
-    console.log('onMouse');
-    // this.visibility = 'hidden';
-  }
-
+ 
 
 }
